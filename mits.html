@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITS - Micro Information Technology Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .nav-link:hover { text-decoration: underline; }
+    .gradient-bg {
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 fade-in">
+  <!-- Header -->
+  <header class="gradient-bg text-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-3xl font-bold tracking-wide">MITS</h1>
+      <nav>
+        <ul class="flex space-x-6 text-lg">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#tutorials">Tutorials</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 bg-white relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full bg-indigo-100 opacity-10"></div>
+    <h2 class="text-5xl font-extrabold mb-4">Welcome to <span class="text-indigo-600">MITS</span></h2>
+    <p class="text-xl mb-6 max-w-xl mx-auto text-gray-700">Learn. Build. Connect. A platform for students to grow through technology and collaboration.</p>
+    <div>
+      <a href="#tutorials" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 px-8 rounded-full text-lg">Start Learning</a>
+      <a href="#projects" class="ml-4 bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-8 rounded-full text-lg">Browse Projects</a>
+    </div>
+  </section>
+
+  <!-- Tutorials -->
+  <section id="tutorials" class="p-12 bg-gradient-to-br from-indigo-100 to-white">
+    <h2 class="text-4xl font-bold mb-10 text-center text-indigo-700">Tutorials</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+        <h3 class="font-bold text-2xl mb-2">Python Basics</h3>
+        <p class="text-gray-700">Introduction to Python programming for beginners.</p>
+        <a href="#" class="text-indigo-600 mt-2 inline-block">Start Tutorial →</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+        <h3 class="font-bold text-2xl mb-2">Java Fundamentals</h3>
+        <p class="text-gray-700">Learn Java syntax, OOP, and build mini projects.</p>
+        <a href="#" class="text-indigo-600 mt-2 inline-block">Start Tutorial →</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+        <h3 class="font-bold text-2xl mb-2">C++ for Beginners</h3>
+        <p class="text-gray-700">Master the basics of C++ programming language.</p>
+        <a href="#" class="text-indigo-600 mt-2 inline-block">Start Tutorial →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="p-12 bg-white">
+    <h2 class="text-4xl font-bold mb-10 text-center text-indigo-700">Student Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-50 p-6 rounded-2xl border hover:shadow-md">
+        <h3 class="font-semibold text-xl mb-2">Tic Tac Toe (Java)</h3>
+        <p>A simple 2-player game with Minimax AI.</p>
+        <a href="#" class="text-indigo-600">View Project →</a>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-2xl border hover:shadow-md">
+        <h3 class="font-semibold text-xl mb-2">Quiz App (Python)</h3>
+        <p>A console-based quiz game built using OOP.</p>
+        <a href="#" class="text-indigo-600">View Project →</a>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-2xl border hover:shadow-md">
+        <h3 class="font-semibold text-xl mb-2">Weather App (HTML/JS)</h3>
+        <p>Uses API to fetch real-time weather data.</p>
+        <a href="#" class="text-indigo-600">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="p-12 bg-gradient-to-r from-white to-indigo-50">
+    <h2 class="text-4xl font-bold mb-8 text-center text-indigo-700">About Us</h2>
+    <p class="max-w-3xl mx-auto text-center mb-10 text-lg text-gray-700">Micro Information Technology Services (MITS) is an educational initiative that connects students with learning resources and projects from over 10 leading universities worldwide. We help learners progress from basics to real-world solutions.</p>
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
+      <img src="images/uni1.png" alt="University 1">
+      <img src="images/uni2.png" alt="University 2">
+      <img src="images/uni3.png" alt="University 3">
+      <img src="images/uni4.png" alt="University 4">
+      <img src="images/uni5.png" alt="University 5">
+      <img src="images/uni6.png" alt="University 6">
+      <img src="images/uni7.png" alt="University 7">
+      <img src="images/uni8.png" alt="University 8">
+      <img src="images/uni9.png" alt="University 9">
+      <img src="images/uni10.png" alt="University 10">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-12 bg-white">
+    <h2 class="text-4xl font-bold mb-8 text-center text-indigo-700">Contact Us</h2>
+    <form class="max-w-xl mx-auto bg-indigo-50 p-6 rounded-xl shadow-md">
+      <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-lg" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-lg" required>
+      <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded-lg" required></textarea>
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-3 rounded-lg font-bold">Send Message</button>
+    </form>
+    <div class="text-center mt-6">
+      <p>Email: <a href="mailto:info@mits.org" class="text-indigo-600">info@mits.org</a></p>
+      <p>Phone: +1 (123) 456-7890</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gradient-bg text-white text-center p-4 mt-6">
+    &copy; 2025 Micro Information Technology Services. All rights reserved.
+  </footer>
+</body>
+</html>
